@@ -1,62 +1,70 @@
-// TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
-// TODO: Create an array of questions for user input
 const questions = [
   {
     type: "input",
-    name: "Name",
-    message: "What is the name of your project?",
+    name: "title",
+    message: "What is the title of your project?",
   },
   {
     type: "input",
-    name: "Description",
+    name: "description",
     message: "Describe your project.",
   },
   {
     type: "input",
-    name: "Installation",
+    name: "installation",
     message: "Please enter installation instructions for your users.",
   },
   {
     type: "input",
-    name: "Usage",
+    name: "usage",
     message: "Please provide usage information for your users.",
   },
   {
-    type: "input",
-    name: "License",
+    type: "list",
+    name: "license",
     message: "What license is used for your project?",
     choices: ["MIT", "Apache", "Mozilla", "Unilicense", "GNU"],
   },
   {
     type: "input",
-    name: "Contributing",
+    name: "contributing",
     message: "Please enter contribution guidelines for your users.",
   },
   {
     type: "input",
-    name: "Tests",
+    name: "tests",
     message: "Please enter test instructions for your users.",
   },
   {
     type: "input",
-    name: "Username",
+    name: "username",
     message: "Please enter your GitHub username.",
   },
   {
     type: "input",
-    name: "Email",
+    name: "email",
     message: "Please enter your email address.",
   },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) =>
+    err
+      ? console.error(err)
+      : console.log("ReadME.md file generated! Please see 'Results' folder.")
+  );
+}
 
-// TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then((answers) => {
+    writeToFile("./Results/GeneratedReadME.MD", generateMarkdown(answers));
+  });
+}
 
 // Function call to initialize app
 init();
