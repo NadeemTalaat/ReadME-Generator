@@ -23,6 +23,8 @@ User must install inquirer (run 'npm install inquirer') in terminal for applicat
 
 User must enter 'node index.js' in terminal. They will then be prompted with a series of questions that they must answer. Once all questions are answered, the file will automatically be generated in the Results folder.
 
+For a demonstration of the application, watch this [video](https://drive.google.com/file/d/1Y6y4hRQMuvVBDsSPtJPP2Ck4N9cBkzrT/view).
+
 ## Contributing
 
 Contributors: Nadeem Talaat & UofT Coding Bootcamp. No further contributions required, project is final.
