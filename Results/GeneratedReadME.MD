@@ -1,13 +1,11 @@
-# Sample test
+# Employee Tracker
 
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-
-For demonstration purposes.
+This is a command-line based employee database which allows you to view or add departments, roles, or employees to a database and stores some additional information such as the salary, job title, manager, etc.
 
 ## Table of Contents
-
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -16,28 +14,21 @@ For demonstration purposes.
 - [Questions](#questions)
 
 ## Installation
-
-Test
+To install and use the application, run "node server.js" from the root folder.
 
 ## Usage
-
-Test
+See installation instructions above.
 
 ## Contributing
-
-Test
+Nadeem Talaat
 
 ## Tests
-
-Test
+N/A
 
 ## License
-
-Mozilla
+MIT
 
 ## Questions
-
 For any questions, please reach out via:
-
 - [GitHub](https://www.github.com/NadeemTalaat)
 - [Email](mailto:nadeem.talaat@gmail.com)
