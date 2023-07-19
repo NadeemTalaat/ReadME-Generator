@@ -1,9 +1,9 @@
-# Employee Tracker
+# Text Editor PWA
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-This is a command-line based employee database which allows you to view or add departments, roles, or employees to a database and stores some additional information such as the salary, job title, manager, etc.
+A progressive web application of a text editor. The application is bundled using Webpack, HtmlWebpackPlugin, and WebpackPwaManifest. This app uses service workers to cache the application for offline use.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -14,13 +14,13 @@ This is a command-line based employee database which allows you to view or add d
 - [Questions](#questions)
 
 ## Installation
-To install and use the application, run "node server.js" from the root folder.
+In terminal, run 'npm start'. This will run the application on 'localhost:3000'.
 
 ## Usage
-See installation instructions above.
+Enter custom notes. The application will remember the saved notes. The user also has the option to install the application for offline use. 
 
 ## Contributing
-Nadeem Talaat
+Nadeem Talaat, UofT Coding Bootcamp
 
 ## Tests
 N/A
